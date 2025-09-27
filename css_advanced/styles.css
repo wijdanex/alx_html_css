@@ -79,3 +79,35 @@ section:first-of-type button {
 section:first-of-type button:hover {
   background-color: #a855f7; /* darker hover */
 }
+/* ===== Quote Section ===== */
+section:nth-of-type(2) {
+  background-color: #C271FF;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 100px;
+  gap: 60px;
+}
+
+section:nth-of-type(2) img {
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+section:nth-of-type(2) blockquote {
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+section:nth-of-type(2) h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+section:nth-of-type(2) p {
+  font-size: 14px;
+  opacity: 0.8;
+}
