@@ -1,3 +1,81 @@
+/* ===== Reset / Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: lightgray;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #071629;
+  color: white;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #071629;
+  padding: 20px 60px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav img {
+  height: 40px; /* adjust based on your logo size */
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* ===== Hero / Banner ===== */
+section:first-of-type {
+  text-align: center;
+  padding: 80px 20px;
+  background: url("./images/Bitmap.png") no-repeat center center/cover;
+}
+
+section:first-of-type h1 {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+section:first-of-type span {
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+section:first-of-type button {
+  margin-top: 30px;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #C271FF;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+section:first-of-type button:hover {
+  background-color: #a855f7; /* darker hover */
 }
