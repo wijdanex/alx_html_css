@@ -1,0 +1,325 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0e1321;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #0e1321;
+}
+
+header nav img {
+    width: 80px;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li a {
+    color: #aaa;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+header nav ul li a:hover {
+    color: #a15cff;
+}
+
+/* Section principale Get Schooled */
+main section:nth-child(1) {
+    padding: 60px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+main section:nth-child(1) > div:first-child {
+    flex: 1 1 300px;
+    color: #fff;
+    text-align: center;
+}
+
+main section:nth-child(1) h1 {
+    font-size: 3rem;
+}
+
+main section:nth-child(1) span {
+    margin: 0 15px;
+    font-weight: 700;
+    color: #a15cff;
+}
+
+main section:nth-child(1) button {
+    margin-top: 20px;
+    background-color: #a15cff;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main section:nth-child(1) button:hover {
+    background-color: #833bcc;
+}
+
+/* Learn from the pros */
+main section:nth-child(1) > div:nth-child(2) {
+    flex: 2 1 600px;
+    text-align: center;
+    color: #ccc;
+}
+
+main section:nth-child(1) > div:nth-child(2) h2 {
+    color: #a15cff;
+    margin-bottom: 25px;
+}
+
+main section:nth-child(1) > div:nth-child(2) > div {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main section:nth-child(1) > div:nth-child(2) > div > div {
+    background-color: #1a2035;
+    border-radius: 15px;
+    padding: 15px;
+    width: 150px;
+    color: #fff;
+}
+
+main section:nth-child(1) > div:nth-child(2) > div > div img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Section témoignage */
+section:nth-child(2) {
+    background-color: #a15cff;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+section:nth-child(2) img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+section:nth-child(2) blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+/* Section Most popular tutorials */
+section:nth-child(3) {
+    padding: 40px;
+    color: #111;
+    background: #fff;
+    text-align: center;
+}
+
+section:nth-child(3) h2 {
+    color: #a15cff;
+    margin-bottom: 30px;
+}
+
+section:nth-child(3) > div {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section:nth-child(3) > div > div {
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    padding: 15px;
+    width: 220px;
+    text-align: left;
+}
+
+section:nth-child(3) img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+section:nth-child(3) h3 {
+    margin-top: 10px;
+    color: #111;
+}
+
+section:nth-child(3) p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+section:nth-child(3) > div > div > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+section:nth-child(3) > div > div > div:first-child img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+section:nth-child(3) h4 {
+    color: #a15cff;
+}
+
+section:nth-child(3) > div > div > div:nth-child(2) {
+    color: #a15cff;
+}
+
+section:nth-child(3) p:last-child {
+    font-weight: 700;
+    color: #a15cff;
+    font-size: 0.85rem;
+}
+
+/* Section Free membership */
+section:nth-child(4) {
+    background-color: #0e1321;
+    padding: 50px 40px;
+    color: #aaa;
+    text-align: center;
+}
+
+section:nth-child(4) h2 {
+    color: #a15cff;
+    margin-bottom: 40px;
+}
+
+section:nth-child(4) > div {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+section:nth-child(4) > div > div {
+    width: 200px;
+}
+
+section:nth-child(4) img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+section:nth-child(4) h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+section:nth-child(4) p {
+    font-size: 0.9rem;
+}
+
+section:nth-child(4) button {
+    margin-top: 40px;
+    background-color: #a15cff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section:nth-child(4) button:hover {
+    background-color: #833bcc;
+}
+
+/* Section FAQ */
+section:nth-child(5) {
+    padding: 50px 40px;
+    background: #fff;
+    color: #111;
+    text-align: center;
+}
+
+section:nth-child(5) h2 {
+    color: #a15cff;
+    margin-bottom: 30px;
+}
+
+section:nth-child(5) > div {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    color: #555;
+    text-align: left;
+}
+
+section:nth-child(5) > div > div {
+    max-width: 350px;
+}
+
+section:nth-child(5) h3 {
+    margin-bottom: 10px;
+    color: #0e1321;
+}
+
+/* Footer */
+footer {
+    background-color: #0e1321;
+    color: #aaa;
+    padding: 30px 40px;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer section img {
+    width: 80px;
+}
+
+footer section div i {
+    color: #aaa;
+    margin-left: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+footer section div i:hover {
+    color: #a15cff;
+}
