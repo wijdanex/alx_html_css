@@ -182,3 +182,56 @@ section:nth-of-type(3) h2 span {
 .video-card .rating .stars {
   color: gold;
 }
+/* ===== Membership Section ===== */
+section:nth-of-type(4) {
+  background-color: #071629;
+  color: white;
+  text-align: center;
+  padding: 80px 100px;
+}
+
+section:nth-of-type(4) h2 {
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+section:nth-of-type(4) h2 span {
+  color: #C271FF;
+}
+
+.membership-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.membership-card img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.membership-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.membership-card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+section:nth-of-type(4) .btn {
+  background-color: #C271FF;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+section:nth-of-type(4) .btn:hover {
+  background-color: #a24edb;
+}
