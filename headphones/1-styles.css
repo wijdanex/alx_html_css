@@ -1,0 +1,226 @@
+/* WHAT WE DO SECTION */
+.what-we-do {
+  text-align: center;
+  color: #000;
+  padding: 60px 20px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.service-item {
+  flex: 1;
+  min-width: 200px;
+  max-width: 220px;
+  margin: 0 auto;
+  text-align: center;
+  background: #fafafa;
+  border-radius: 15px;
+  padding: 25px 15px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: bounceIn 1.5s ease both;
+}
+
+/* New icon image style */
+.service-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  animation: pulse 2s infinite;
+}
+
+.service-item:hover {
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0 8px 20px rgba(255, 101, 101, 0.3);
+}
+
+.service-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.service-item p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-item {
+    max-width: 300px;
+  }
+}
+
+
+
+
+
+/* ===== FOOTER SECTION ===== */
+.footer {
+  background-color: #0A0439; /* The dark blue background */
+  color: white;
+  padding: 30px 40px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Logo on left, icons on right */
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Logo on the left */
+.footer-logo img {
+  width: 100px;
+  height: auto;
+}
+
+/* Social icons on the right */
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Circle style for each icon */
+.footer-socials a {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  transform: scale(1.1);
+  background-color: #FF6565; /* pink hover effect */
+}
+
+/* Smaller icon size */
+.footer-socials img {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+
+/* Footer bottom text */
+.footer-text {
+  text-align: center;
+  color: #ffffffb3; /* light white transparency */
+  font-size: 0.85rem;
+  margin-top: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-logo img {
+    width: 90px;
+  }
+}
+
+
+
+/* ===== FOOTER SECTION ===== */
+.footer {
+  background-color: #0A0439; /* The dark blue background */
+  color: white;
+  padding: 30px 40px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Logo on left, icons on right */
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Logo on the left */
+.footer-logo img {
+  width: 100px;
+  height: auto;
+}
+
+/* Social icons on the right */
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Circle style for each icon */
+.footer-socials a {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  transform: scale(1.1);
+  background-color: #FF6565; /* pink hover effect */
+}
+
+/* Smaller icon size */
+.footer-socials img {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+
+/* Footer bottom text */
+.footer-text {
+  text-align: center;
+  color: #ffffffb3; /* light white transparency */
+  font-size: 0.85rem;
+  margin-top: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-logo img {
+    width: 90px;
+  }
+}

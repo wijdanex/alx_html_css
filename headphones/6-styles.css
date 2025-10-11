@@ -1,0 +1,139 @@
+/* ===== reset ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ===== variables ===== */
+:root{
+  --accent: #FF6565;        /* pink used for pentagons */
+  --bg-dark: #071026;
+  --text-light: #ffffff;
+  --muted: #9aa3ad;
+  --max-width: 1000px;
+  --pent-size: 120px;      /* default pentagon size */
+}
+
+/* ===== page base ===== */
+html,body{height:100%}
+body{
+  font-family: "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background-color: #fff;
+  color: #0b1220;
+}
+
+/* ===== results section ===== */
+.results{
+  /* background image from previous tasks is preserved; remove or change if you need */
+  background: url("images/headphones_hero_2.jpg") no-repeat center center/cover;
+  color: var(--text-light);
+  padding: 80px 20px;
+}
+
+.results-container{
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.results h2{
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.results-intro{
+  color: rgba(255,255,255,0.85);
+  max-width: 750px;
+  margin: 0 auto 36px;
+  line-height: 1.6;
+}
+
+/* ===== grid of results ===== */
+.results-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  align-items: start;
+  justify-items: center;
+  padding: 10px 10px 0;
+}
+
+/* each result card */
+.result-card{
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+}
+
+/* caption under pentagon */
+.result-caption{
+  color: rgba(255,255,255,0.95);
+  font-size: 0.9rem;
+  text-align: center;
+  max-width: 180px;
+}
+
+/* ===== pentagon shape (pure CSS) =====
+   We'll use clip-path polygon to draw a regular-ish pentagon.
+   The pentagon is a square-sized element with centered label using grid.
+*/
+.pentagon{
+  width: var(--pent-size);
+  height: var(--pent-size);
+  display: grid;
+  place-items: center;
+  background: var(--accent);
+  color: white;
+  position: relative;
+  /* smooth edges on some browsers */
+  -webkit-clip-path: polygon(50% 0%, 95% 35%, 77% 95%, 23% 95%, 5% 35%);
+  clip-path: polygon(50% 0%, 95% 35%, 77% 95%, 23% 95%, 5% 35%);
+  box-shadow: 0 6px 18px rgba(7,16,38,0.45);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Label inside */
+.pentagon-label{
+  z-index: 2;
+  font-size: 1.3rem;
+  line-height: 1;
+  color: #fff;
+}
+
+/* for better contrast on small pentagons */
+.pentagon::after{
+  /* subtle inner highlight for a closer match to design */
+  content: "";
+  position: absolute;
+  inset: 8%;
+  background: rgba(255,255,255,0.03);
+  -webkit-clip-path: polygon(50% 0%, 95% 35%, 77% 95%, 23% 95%, 5% 35%);
+  clip-path: polygon(50% 0%, 95% 35%, 77% 95%, 23% 95%, 5% 35%);
+  border-radius: 2px;
+}
+
+/* ===== responsive rules ===== */
+@media (max-width: 900px){
+  .results-grid{ grid-template-columns: repeat(2, 1fr); gap:24px; }
+}
+
+@media (max-width: 480px){
+  .results{
+    padding: 50px 12px;
+  }
+
+  .results h2{ font-size: 1.4rem; }
+  .results-intro{ margin-bottom: 28px; font-size: 0.95rem; }
+
+  .results-grid{
+    grid-template-columns: 1fr;
+    gap: 18px;
+    align-items: center;
+  }
+
+  /* smaller pentagons on mobile */
+  :root{ --pent-size: 100px; }
+}

@@ -1,0 +1,276 @@
+/* ===== our results SECTION ===== */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --primary-color: #FF6565;
+  --background-dark: #071629;
+  --text-light: #ffffff;
+}
+
+/* Section Styling */
+.results {
+  background: url('images/headphones_hero_2.jpg') no-repeat center center/cover;
+  color: var(--text-light);
+  text-align: center;
+  padding: 100px 20px;
+  overflow: hidden;
+  animation: fadeInUp 1.5s ease both;
+}
+
+.results-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.results h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease both;
+}
+
+.results p {
+  font-size: 1rem;
+  margin-bottom: 60px;
+  line-height: 1.6;
+  animation: fadeIn 2s ease both;
+}
+
+/* Cards */
+.results-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  transform: scale(1);
+  transition: transform 0.5s ease, rotate 0.5s ease;
+  animation: popIn 1.8s ease both;
+}
+
+.card:hover {
+  transform: scale(1.15) rotate(3deg);
+}
+
+.card img {
+  width: 120px;
+  animation: floating 3s ease-in-out infinite;
+}
+
+.card p {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: var(--text-light);
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .results {
+    padding: 60px 15px;
+  }
+
+  .results-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card img {
+    width: 100px;
+  }
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+@keyframes floating {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+
+
+
+
+/* ===== FOOTER SECTION ===== */
+.footer {
+  background-color: #0A0439; /* The dark blue background */
+  color: white;
+  padding: 30px 40px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Logo on left, icons on right */
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Logo on the left */
+.footer-logo img {
+  width: 100px;
+  height: auto;
+}
+
+/* Social icons on the right */
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Circle style for each icon */
+.footer-socials a {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  transform: scale(1.1);
+  background-color: #FF6565; /* pink hover effect */
+}
+
+/* Smaller icon size */
+.footer-socials img {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+
+/* Footer bottom text */
+.footer-text {
+  text-align: center;
+  color: #ffffffb3; /* light white transparency */
+  font-size: 0.85rem;
+  margin-top: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-logo img {
+    width: 90px;
+  }
+}
+
+
+
+/* ===== FOOTER SECTION ===== */
+.footer {
+  background-color: #0A0439; /* The dark blue background */
+  color: white;
+  padding: 30px 40px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Logo on left, icons on right */
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Logo on the left */
+.footer-logo img {
+  width: 100px;
+  height: auto;
+}
+
+/* Social icons on the right */
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Circle style for each icon */
+.footer-socials a {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  transform: scale(1.1);
+  background-color: #FF6565; /* pink hover effect */
+}
+
+/* Smaller icon size */
+.footer-socials img {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+
+/* Footer bottom text */
+.footer-text {
+  text-align: center;
+  color: #ffffffb3; /* light white transparency */
+  font-size: 0.85rem;
+  margin-top: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-logo img {
+    width: 90px;
+  }
+}
+

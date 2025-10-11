@@ -1,0 +1,156 @@
+
+/* ===== FOOTER SECTION ===== */
+.footer {
+  background-color: #0A0439; /* The dark blue background */
+  color: white;
+  padding: 30px 40px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Logo on left, icons on right */
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Logo on the left */
+.footer-logo img {
+  width: 100px;
+  height: auto;
+}
+
+/* Social icons on the right */
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Circle style for each icon */
+.footer-socials a {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  transform: scale(1.1);
+  background-color: #FF6565; /* pink hover effect */
+}
+
+/* Smaller icon size */
+.footer-socials img {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+
+/* Footer bottom text */
+.footer-text {
+  text-align: center;
+  color: #ffffffb3; /* light white transparency */
+  font-size: 0.85rem;
+  margin-top: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-logo img {
+    width: 90px;
+  }
+}
+
+
+
+/* ===== FOOTER SECTION ===== */
+.footer {
+  background-color: #0A0439; /* The dark blue background */
+  color: white;
+  padding: 30px 40px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Logo on left, icons on right */
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Logo on the left */
+.footer-logo img {
+  width: 100px;
+  height: auto;
+}
+
+/* Social icons on the right */
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Circle style for each icon */
+.footer-socials a {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  transform: scale(1.1);
+  background-color: #FF6565; /* pink hover effect */
+}
+
+/* Smaller icon size */
+.footer-socials img {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+
+/* Footer bottom text */
+.footer-text {
+  text-align: center;
+  color: #ffffffb3; /* light white transparency */
+  font-size: 0.85rem;
+  margin-top: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-logo img {
+    width: 90px;
+  }
+}

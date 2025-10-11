@@ -1,0 +1,122 @@
+
+/* ===== first web page SECTION ===== */
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+    --primary-color: #FF6565;
+    --max-width: 1000px;
+    --font-family: Arial, Helvetica, sans-serif;
+}
+/* GLOBAL STYLES */
+body {
+  font-family: var(--font-family);
+  color: #fff;
+  background: url("images/headphones_hero_1.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+
+/* HEADER */
+.header {
+    background-color: #200a0a00 ;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: var(--max-width);
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+/* NAVIGATION */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover,
+.nav a:active {
+    color: var(--primary-color);
+}
+
+/* HERO SECTION */
+.hero {
+    background: url("images/headphones_hero_1.jpg") center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.btn:hover,
+.btn:active {
+    opacity: 0.9;
+}
+
+/* RESPONSIVE (MOBILE ≤ 480px) */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}

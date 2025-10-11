@@ -1,0 +1,124 @@
+/* WHAT WE DO SECTION */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #FF6565;
+  --max-width: 1000px;
+}
+
+/* Section base */
+.what-we-do {
+  text-align: center;
+  color: #000;
+  padding: 60px 20px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.what-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  animation: fadeInUp 1.2s ease both;
+}
+
+.what-we-do h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.what-description {
+  font-size: 1rem;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto 50px;
+  animation: fadeIn 2s ease;
+}
+
+/* SERVICES GRID */
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Each item */
+.service-item {
+  flex: 1;
+  min-width: 200px;
+  max-width: 220px;
+  margin: 0 auto;
+  text-align: center;
+  background: #fafafa;
+  border-radius: 15px;
+  padding: 25px 15px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: bounceIn 1.5s ease both;
+}
+
+/* hover effects */
+.service-item:hover {
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0 8px 20px rgba(255, 101, 101, 0.3);
+}
+
+/* ICON STYLE */
+.service-item span {
+  font-size: 60px;
+  display: inline-block;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  animation: pulse 2s infinite;
+}
+
+.service-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.service-item p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 480px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-item {
+    max-width: 300px;
+  }
+}
+
+/* ====== ANIMATIONS ====== */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.15); opacity: 0.9; }
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.05); opacity: 1; }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
